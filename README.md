@@ -1,7 +1,5 @@
 # [Simple Color Picker](https://github.com/iamapig120/simple-color-picker)
 
-===
-
 - No Flash or images
 - No Library Dependencies
 - A cursor seems like Photoshop's
