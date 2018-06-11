@@ -230,6 +230,7 @@
 
       const mouseMoveFun = e => {
         window.addEventListener('mouseup', function mouseUpFun() {
+          thisClass.getDOM().style.userSelect = 'text'
           window.removeEventListener('mousemove', mouseMoveFun)
           window.removeEventListener('mouseup', mouseUpFun)
         })
@@ -244,6 +245,7 @@
       }
       const mouseMoveFunBar = e => {
         window.addEventListener('mouseup', function mouseUpFunBar() {
+          thisClass.getDOM().style.userSelect = 'text'
           window.removeEventListener('mousemove', mouseMoveFunBar)
           window.removeEventListener('mouseup', mouseUpFunBar)
         })
@@ -256,10 +258,12 @@
         this.updatePicker()
       }
       this._gradientBlack.addEventListener('mousedown', e => {
+        this.getDOM().style.userSelect = 'none'
         mouseMoveFun(e)
         window.addEventListener('mousemove', mouseMoveFun)
       })
       this._rightBar.addEventListener('mousedown', e => {
+        this.getDOM().style.userSelect = 'none'
         mouseMoveFunBar(e)
         window.addEventListener('mousemove', mouseMoveFunBar)
       })
@@ -453,7 +457,7 @@
       return this.getValue()
     }
     set value(value) {
-      this.setValue(value,true)
+      this.setValue(value, true)
       this.updatePicker()
     }
   }
