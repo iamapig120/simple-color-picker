@@ -5,6 +5,7 @@
 - A cursor seems like Photoshop's
 - HEX and RGB input
 - HEX, RGB and HSB/HSV output
+- Can be listened "onchange" event
 - Styleable flat design in CSS
 - Useable in Electron and Browsers
 
