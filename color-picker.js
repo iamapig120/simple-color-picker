@@ -332,7 +332,7 @@
           return hexToRgb(this.getValue('hex'))
         }
         case 'hsb': {
-          return rgbToHsb(hexToRgb(this.getValue('hex')))
+          return rgbToHsb(this.getValue('hex'))
         }
         case 'value':
         default: {
