@@ -206,6 +206,7 @@
 
       textInput.addEventListener('change', () => {
         this.setValue(textInput.value, true)
+        this.onchange()
         this.updatePicker()
       })
 
@@ -452,7 +453,8 @@
       return this.getValue()
     }
     set value(value) {
-      this.setValue(value)
+      this.setValue(value,true)
+      this.updatePicker()
     }
   }
   if (typeof exports === 'object') {

@@ -11,8 +11,9 @@
 .color-picker {
   background-color: #fff;
   display: block;
-  min-width: 128x;
+  min-width: 128px;
   min-height: 128px;
+  position: relative;
 }
 .color-picker > .color-picker-right-bar {
   border: solid #000000 1px;
