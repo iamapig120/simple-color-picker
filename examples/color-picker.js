@@ -196,6 +196,7 @@
       textInput.maxLength = 6
       textInput.style.width = '100%'
       textInput.style.height = '100%'
+      textInput.type = 'text'
       textInputBox.appendChild(textInput)
 
       this.getDOM().appendChild(rightBar)
