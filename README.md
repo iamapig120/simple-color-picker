@@ -11,7 +11,7 @@
 
 ## Demo
 
-[**Please view this page**](https://www.bysb.net/study/color-picker/)
+[**Please view this Live Demo**](https://www.bysb.net/study/color-picker/)
 
 You may view demo's source code to have a mastery of the usage
 
