@@ -1,6 +1,6 @@
 ;(function() {
   /**
-   *
+   * addClassName to an Element
    * @param {HTMLElement} node
    */
   const addClassName = (node, str) => {
@@ -19,7 +19,7 @@
       .join(' ')
   }
   /**
-   * 设定边界值
+   * 设定边界值 Set Max and Min
    * @param {number} num
    * @param {number} max
    * @param {number} min
@@ -75,7 +75,7 @@
   }
 
   /**
-   * 由百分比转为一个基准rgb颜色
+   * 由百分比转为一个基准rgb颜色 Percent to RGB
    * @param {number} heightPercent 当前选中位置相对整体高度
    * @returns {r: any,g: any,b: any}
    */
@@ -134,7 +134,7 @@
   }
 
   /**
-   *
+   * Hex To RGB
    * @param {string} hex
    */
   const hexToRgb = hex => {
@@ -146,7 +146,7 @@
   }
 
   /**
-   * 无意义的简写，里有纯粹是为了方便压缩代码
+   * "cE" is only for zip codes
    * @param {HTMLElement} str
    */
   const cE = str => document.createElement(str)
@@ -156,11 +156,6 @@
       this.dom = dom
       const thisClass = this
 
-      // if (input) {
-      //   input.addEventListener('click', e => {
-      //     this.updateValue(input)
-      //   })
-      // }
       Array.prototype.forEach.call(this.getDOM().children, node => {
         node.remove()
       })
@@ -399,10 +394,6 @@
       }
       this._lastValue = this.value
     }
-    // updateValue(input = this.input) {
-    //   if (input) input.value = this.getValue()
-    //   this.textInput.value = this._value
-    // }
     /**
      * @return {HTMLDivElement}
      */
@@ -462,8 +453,8 @@
       this.updatePicker()
     }
   }
-  if (typeof exports === 'object') {
-    // Node, CommonJS之类的
+  if (module && typeof exports === 'object') {
+    // For Node, CommonJS
     module.exports.ColorPicker = ColorPicker
   } else if (typeof window === 'object') {
     window.ColorPicker = ColorPicker
