@@ -1,6 +1,6 @@
 {
   "name": "h5-color-picker",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "A simple color picker without dependencies",
   "main": "color-picker.js",
   "directories": {
